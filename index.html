@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Omar Taipicaña">
+    <meta name="description" content="No más de 165 caracteres">
+    <meta name="keywords" content="desarrollador, programador">
+    <meta name="theme-color" contente="#09f">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Portafolio Fernando</title>
+
+    <link rel="icon" href="assets/img/icon-fer.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="assets/js/main.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "tsa1NGP1qaN0oVkrh",
+            });
+        })();
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar grid--container">
+            <a class="navbar__logo" href="#"><i class='bx bxs-registered'></i>Fernando</a>
+            <div id="nav" class="navbar__menu">
+                <a href="#close"><i class='bx bx-x-circle btn__close navbar__icon'></i></a>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link active" href="#home">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#about">Acerca de mi</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#projects">Portafolio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__toggles">
+                <div class="navbar__toggle--darkmode">
+                    <input type="checkbox" name="" id="darkmode-toggle" class="navbar__toggle--darkmode-input">
+                    <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+                        <i class="bx bx-sun navbar__toogle--darkmode-sun"></i>
+                        <i class="bx bx-moon navbar__toogle--darkmode-moon"></i>
+                    </label>
+                </div>
+                <div class="navbar__toggle--language">
+                    <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input">
+                    <label for="language-toggle" class="navbar__toggle--language-label">
+                    </label>
+                </div>
+            </div>
+            <a href="#nav"><i class='bx bx-menu btn__open navbar__icon'></i></a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <i class='bx bxl-html5 home__layer home__layer--1' data-speed="-5"></i>
+            <i class='bx bxl-javascript home__layer home__layer--2' data-speed="5"></i>
+            <i class='bx bxl-css3 home__layer home__layer--3' data-speed="2"></i>
+            <i class='bx bxl-nodejs home__layer home__layer--4' data-speed="6"></i>
+            <i class='bx bxl-react home__layer home__layer--5' data-speed="8"></i>
+            <i class='bx bxl-tailwind-css home__layer home__layer--6' data-speed="-2"></i>
+            <i class='bx bxl-redux home__layer home__layer--7' data-speed="4"></i>
+            <i class='bx bxl-typescript home__layer home__layer--8' data-speed="-2"></i>
+            <i class='bx bxl-git home__layer home__layer--9' data-speed="6"></i>
+            <i class='bx bxl-graphql home__layer home__layer--10' data-speed="-7"></i>
+            <i class='bx bx-code-alt home__layer home__layer--11' data-speed="-5"></i>
+            <div class="home__container grid--container">
+                <div class="home__image">
+                    <span></span>
+                    <img src="assets/img/FER-SIN-FONDO.png" alt="profile photo" />
+                </div>
+                <ul class="home__social">
+                    <li class="home__social-item">
+                        <a class="home__social-link" href="#"><i class="bx bxl-linkedin"></i></a>
+                    </li>
+                    <li class="home__social-item">
+                        <a class="home__social-link" href="#"><i class='bx bxl-whatsapp'></i></a>
+                    </li>
+                    <li class="home__social-item">
+                        <a class="home__social-link" href="#"><i class='bx bxl-github'></i></a>
+                    </li>
+                    <li class="home__social-item">
+                        <a class="home__social-link" href="#"><i class='bx bx-envelope'></i></a>
+                    </li>
+                </ul>
+
+                <div class="home__info">
+
+                    <h1 class="home__title ">Soy Fernando!</h1>
+
+                    <p class="home__description">
+                        Un apasionado desarrollador con experiencia en múltiples tecnologías web. Ofrezco servicios
+                        de desarrollo web personalizados y creativos, adaptados a las necesidades de cada cliente. Mi
+                        portafolio incluye una variedad de proyectos que demuestran mi habilidad para crear soluciones
+                        innovadoras y funcionales. ¡Contáctame para comenzar tu próximo proyecto emocionante!
+                    </p>
+                </div>
+
+                <div class="home__buttons">
+                    <button class="btn btn--primary" type="button">Descarga CV</button>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about section">
+            <h2 class="section__title">Acerca de Mí</h2>
+
+            <div class="about__container grid--container">
+                <p class="about__description">
+
+                    Soy un desarrollador con experiencia en Power BI, donde he creado informes y dashboards
+                    interactivos. Ahora estoy expandiendo mis habilidades aprendiendo nuevas tecnologías de desarrollo
+                    web como React.js y Node.js. Estoy emocionado de aplicar mis conocimientos en nuevas áreas y seguir
+                    creciendo profesionalmente.quam.
+                </p>
+
+                <div class="about__cards">
+                    <!--Card 1 -->
+                    <div class="about__card">
+                        <img class="about__card--img" src="assets/img/FER_1.jpg" alt="Laborando como ingeniero">
+                    </div>
+                    <!--Card 2 -->
+                    <div class="about__card">
+                        <img class="about__card--img" src="assets/img/FER_2.jpg" alt="Laborando como diseñador">
+                    </div>
+                    <!--Card 3 -->
+                    <div class="about__card">
+                        <img class="about__card--img" src="assets/img/FER_3.jpg" alt="Trabajando en equipo">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="skills" class="skills section">
+            <h2 class="section__title">Habilidades</h2>
+
+            <div class="skills__container grid--container">
+                <p class="skills__description">
+                    Mis habilidades son diversas en erramientas como excel avanzado, Power Bi, y actualmente enfocando
+                    en desarrollar mis habilidades en desarrollo web en tecnologías como
+                </p>
+
+                <div class="skills__wrapper">
+                    <div class="skills__cards">
+                        <!--Card 1 -->
+                        <input type="radio" name="slide" id="c1" checked class="skills__input">
+                        <label for="c1" class="skills__card">
+                            <div class="skills__card-row">
+                                <i class="bx bxl-html5"></i>
+                                <div class="skills__description">
+                                    <h3 class="skills__card-title">HTML</h3>
+                                    <p>Experiencia en el uso de HTML para la creación de contenido web, incluyendo la
+                                        estructura de páginas y la integración con otras tecnologías.</p>
+                                </div>
+                            </div>
+                        </label>
+                        <!--Card 2 -->
+                        <input type="radio" name="slide" id="c2" checked class="skills__input">
+                        <label for="c2" class="skills__card">
+                            <div class="skills__card-row">
+                                <i class="bx bxl-css3"></i>
+                                <div class="skills__description">
+                                    <h3 class="skills__card-title">CSS3</h3>
+                                    <p>Habilidad para diseñar y estilizar sitios web utilizando CSS, incluyendo la
+                                        creación de diseños responsivos y atractivos visualmente.</p>
+                                </div>
+                            </div>
+                        </label>
+                        <!--Card 3 -->
+                        <input type="radio" name="slide" id="c3" checked class="skills__input">
+                        <label for="c3" class="skills__card">
+                            <div class="skills__card-row">
+                                <i class="bx bxl-javascript"></i>
+                                <div class="skills__description">
+                                    <h3 class="skills__card-title">Javascript</h3>
+                                    <p> Experiencia en el uso de JavaScript para el desarrollo web, incluyendo la
+                                        manipulación del DOM, el manejo de eventos y la creación de aplicaciones
+                                        interactivas.</p>
+                                </div>
+                            </div>
+                        </label>
+                        <!--Card 4 -->
+                        <input type="radio" name="slide" id="c4" checked class="skills__input">
+                        <label for="c4" class="skills__card">
+                            <div class="skills__card-row">
+                                <i class='bx bxl-react'></i>
+                                <div class="skills__description">
+                                    <h3 class="skills__card-title">React</h3>
+                                    <p>Conocimiento en el desarrollo de aplicaciones web utilizando React, incluyendo
+                                        lacreación de componentes reutilizables y el manejo del estado de la aplicación
+                                        de
+                                        forma eficientes.</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="skills__tags">
+                    <h3 class="skills__tags-title">Habilidades Blandas</h3>
+                    <div class="skills__tags-container">
+                        <span class="skills__tag">Responsable</span>
+                        <span class="skills__tag">Trabajo en equipo</span>
+                        <span class="skills__tag">Creativo</span>
+                        <span class="skills__tag">Puntual</span>
+                        <span class="skills__tag">Proactivo</span>
+                        <span class="skills__tag">Autodidacta</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects section">
+            <h2 class="section__title">Proyectos</h2>
+            <!-- PROYECTO 1  -->
+            <div class="projects__container grid--container">
+                <div class="projects__project">
+                    <div class="projects__inner grid--container">
+                        <div class="projects__image">
+                            <img src="assets/img/ilustracion_1.jpg" alt="project 1" />
+                        </div>
+
+                        <div class="projects__info">
+                            <h3 class="projects__name">Proyecto 1</h3>
+                            <p class="projects__description">
+                                Dashboard de productividad y control de la Unidad Nacional de Investigacion contra la
+                                Violencia de Género del Ecuador.
+                            </p>
+                            <div class="projects__buttons">
+                                <button class="btn projects__button" type="button">
+                                    VER DEMO
+                                </button>
+                                <button class="btn projects__button" type="button">
+                                    VER CÓDIGO
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROYECTO 2  -->
+
+                <div class="projects__project">
+                    <div class="projects__inner grid--container">
+                        <div class="projects__image">
+                            <img src="assets/img/ilustracion_2.jpg" alt="project 2" />
+                        </div>
+
+                        <div class="projects__info">
+                            <h3 class="projects__name">Proyecto 2</h3>
+                            <p class="projects__description">
+                                Dshboard de control de productividad en visualizador de evolutivos.
+                            </p>
+
+                            <div class="projects__buttons">
+                                <button class="btn projects__button" type="button">
+                                    VER DEMO
+                                </button>
+                                <button class="btn projects__button" type="button">
+                                    VER CÓDIGO
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROYECTO 3 -->
+
+                <div class="projects__project">
+                    <div class="projects__inner grid--container">
+                        <div class="projects__image">
+                            <img src="assets/img/ilustracion_3.jpg" alt="project 3" />
+                        </div>
+
+                        <div class="projects__info">
+                            <h3 class="projects__name">Proyecto 3</h3>
+                            <p class="projects__description">
+                                Dashboard de control de actividades relacionadas a la Campaña "Yo Vivo Sin Violencia"
+                            </p>
+
+                            <div class="projects__buttons">
+                                <button class="btn projects__button" type="button">
+                                    VER DEMO
+                                </button>
+                                <button class="btn projects__button" type="button">
+                                    VER CÓDIGO
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <h2 class="section__title">Contacto</h2>
+
+            <div class="contact__container grid--container">
+                <div class="contact__info">
+                    <h3 class="contact__info-title">Información de contacto</h3>
+                    <p class="contact__info-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                    <address class="contatc__info-data">
+                        <div class="contact__info-item">
+                            <i class='bx bxl-whatsapp'></i>
+
+                            <span class="contact__info-number">
+                                <a href="https://wa.me/+593996774133?text=Hola soy fernando, te puedo ayudar?"
+                                    target="_blank">Enviar mensaje a
+                                    WhatsApp</a>
+                            </span>
+                        </div>
+
+                        <!-- <div class="contact__info-item">
+                            <i class="bx bx-phone"></i>
+
+                            <span class="contact__info-number">
+                                <a href="tel:1-234-567-8910"> +1 123 456 7890 </a>
+                            </span>
+                        </div> -->
+
+                        <div class="contact__info-item">
+                            <i class="bx bxs-envelope"></i>
+
+                            <span class="contact__info-mail">
+                                <a id="mail" href="mailto:fernandoparadoja@gmail.com"> fernandoparadoja@gmail.com </a>
+                            </span>
+                        </div>
+
+                        <div class="contact__info-item">
+                            <i class="bx bx-map"></i>
+
+                            <span class="contact__info-map">
+                                <a href="https://maps.app.goo.gl/ut6tGUATLUtXruv68" target="_blank">Quito, Ecuador. </a>
+                            </span>
+                        </div>
+                    </address>
+                </div>
+
+                <div class="contact__form">
+                    <h3 class="contact__form-title">Enviar mensaje</h3>
+                    <form id="form" class="contact__form-container">
+                        <div class="contact__form-group">
+                            <label for="name" class="contact__form-label">Nombre</label>
+                            <input type="text" id="name" name="name" class="contact__form-input" />
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label for="email" class="contact__form-label">Correo</label>
+                            <input type="email" id="email" name="email" class="contact__form-input" />
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label for="subject" class="contact__form-label">Asunto</label>
+                            <input type="text" id="subject" name="subject" class="contact__form-input" />
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label for="message" class="contact__form-label">Mensaje</label>
+                            <textarea id="message" name="message" cols="30" rows="10"
+                                class="contact__form-input"></textarea>
+                        </div>
+                        <dialog id="modal">
+                            Formulario enviado con éxito!
+                            <button type="reset" id="btn_close-modal">Cerrar</button>
+                        </dialog>
+
+                        <button type="submit" class="btn contact__form-button">
+                            Enviar
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <div class="footer__container grid--container">
+            <div class="footer__info">
+                <h3 class="footer__title">Fernando</h3>
+                <p class="footer__description">
+                    Soy un desarrollador web apasionado por crear experiencias digitales únicas y funcionales. Me enfoco en la innovación y la calidad para superar expectativas y lograr resultados impactantes.
+                </p>
+            </div>
+
+            <div class="footer__social">
+                <h3 class="footer__title">Redes Sociales</h3>
+
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="https://www.facebook.com/fernan.tahere.7/"
+                            target="blank"><i class="bx bxl-facebook"></i></a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#" target="blank"><i class="bx bxl-instagram"></i></a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#" target="blank"><i class="bx bxl-twitter"></i></a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a class="footer__social-link"
+                            href="https://www.linkedin.com/in/fernando-taipica%C3%B1a-a3245a104/" target="blank"><i
+                                class="bx bxl-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy"></p>
+    </footer>
+
+</body>
+
+</html>
