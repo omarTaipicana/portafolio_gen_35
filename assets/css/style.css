@@ -1035,3 +1035,6 @@ img {
   }
 }
 
+* {
+  transition:  background-color 3s
+}
